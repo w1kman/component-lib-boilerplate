@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { FileInputContainer } from './styled'
 
 interface FileInputProps {
   id?: string
@@ -7,9 +8,9 @@ interface FileInputProps {
 
 export default function FileInput ({ id = 'input-field', children }: FileInputProps) {
   return (
-    <div>
+    <FileInputContainer>
       <input id={id} type="file"/>
       {!!children && (<label htmlFor={id}>{children}</label>)}
-    </div>
+    </FileInputContainer>
   )
 }

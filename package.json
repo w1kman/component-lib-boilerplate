@@ -1,5 +1,8 @@
 {
   "name": "@w1kman/component-lib-boilerplate",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/w1kman"
+  },
   "version": "0.1.0",
   "description": "React component library boilerplate",
   "scripts": {
@@ -12,11 +15,16 @@
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.3",
     "@types/react": "^18.0.15",
-    "react": "^18.2.0",
+    "@types/styled-components": "^5.1.25",
     "rollup": "^2.76.0",
     "rollup-plugin-dts": "^4.2.2",
+    "styled-components": "^5.3.5",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "styled-components": "^5.3.5"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
