@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/w1kman"
   },
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "React component library boilerplate",
   "scripts": {
     "rollup": "rollup -c",
